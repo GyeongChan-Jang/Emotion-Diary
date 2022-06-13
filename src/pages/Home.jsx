@@ -11,7 +11,7 @@ function Home() {
   const [curDate, setCurDate] = useState(new Date())
   const headText = `${curDate.getFullYear()}년 ${curDate.getMonth() + 1}월`
 
-  // 헤드에 나타나는 월에 맞는 데이터 필터링
+  // 헤더에 나타나는 월에 맞는 데이터 필터링
   useEffect(() => {
     if (diaryList.length >= 1) {
       const firstDay = new Date(
